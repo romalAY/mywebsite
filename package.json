@@ -1,0 +1,23 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romalAY/mywebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romalAY/mywebsite/issues"
+  },
+  "homepage": "https://github.com/romalAY/mywebsite#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

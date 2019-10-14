@@ -2,7 +2,7 @@
 
 html,
 body {
-    margin: 0;
+    margin: 10;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -29,6 +29,18 @@ body {
 .line {
     width: 24em;
     top: 50%;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.line2 {
+
+    width: 24em;
+    top: 50;
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     text-align: center;
@@ -240,7 +252,7 @@ nav #menu li a {
 
 /*------------------------------- hero section  -------------------*/
 .hero {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,8 +265,13 @@ nav #menu li a {
     line-height: 58px;
 }
 
-@media(max-width: 768px) {
-    .header h1 {
+.hero h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.hero h2 @media(max-width: 768px) {
+    .header h1 h2 {
         font-size: 26px;
     }
 }
@@ -303,13 +320,7 @@ h6 {
     text-align: center;
 }
 
-.vertical {
-    margin-top: 40px;
-    border-left: 1px solid #fff;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-}
+
 
 .project {
     height: 550px;
@@ -406,13 +417,10 @@ h6 {
     }
 }
 
-
-
-/*------------------------------- footer section -------------------*/
+/*------------------------------ footer section after edit -----------------*/
 .collab {
     text-align: right;
 }
-
 
 .collab p {
     font-weight: lighter !important;
@@ -434,40 +442,60 @@ h6 {
     font-weight: lighter;
 }
 
-
 .info li {
     font-weight: lighter;
-
     color: #fff;
-
     font-size: 18px;
-
     padding-left: 20px;
 
 }
 
-#fb::before {
-    display: inline-block;
-
-    content: '';
-
-    border-radius: 100%;
-
-    height: 4px;
-
-    width: 4px;
-
-    margin-right: 6px;
-
-    background: #c4302b;
+#personal {
+    text-align: right;
 }
 
-#yt::before {
+#media ul li {
+    display: inline-block;
+    padding-left: unset;
+
+}
+
+#media li {
+    width: 20;
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    margin-right: 8px;
+}
+
+
+.fa-github {
+    margin-right: 8px;
+}
+
+
+
+/*------------------------------- footer section ------------------- before edit
+* #LN::before {
+    font-family: "FontAwesome";
+    content: "fa-linkedin-in";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+
+}
+
+/*Need to add a hover -HighLight & <a href="#"; </a>
+
+/*
+#GH::before {
     display: inline-block;
 
     content: '';
 
-    border-radius: 100%;
+    border-radius: 50%;
 
     height: 4px;
 
@@ -475,7 +503,7 @@ h6 {
 
     margin-right: 6px;
 
-    background: #c4302b;
+    background: #060200;
 }
 
 #ig::before {
@@ -491,7 +519,7 @@ h6 {
 
     margin-right: 6px;
 
-    background: #c4302b;
+    background: #060200;
 }
 
 #wa::before {
@@ -507,7 +535,7 @@ h6 {
 
     margin-right: 6px;
 
-    background: #c4302b;
+    background: #060200;
 }
 
 
@@ -519,6 +547,7 @@ h6 {
     display: inline-block;
 
 }
+*/
 
 @media(max-width:768px) {
 
@@ -527,6 +556,7 @@ h6 {
     #media,
     #address {
         text-align: center;
+
     }
 
     .info ul {
